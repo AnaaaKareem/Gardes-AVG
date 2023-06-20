@@ -8,15 +8,15 @@ This project is a C program that calculates the average grades of a number of st
 
 To compile the program, use the gcc compiler with the following command:
 
-`gcc -o student_grades student_grades.c`
+`gcc gradeAvg.c -o program.exe -lm`
 
 To run the program, use the following command:
 
-`./student_grades <number_of_students> <number_of_grades> <input_file>`
+`./program.exe <number_of_students> <number_of_grades> <input_file>`
 
 For example, if you have an input file named `grades.txt` with 10 students and 5 grades per student, you can run the program as follows:
 
-`./student_grades 10 5 grades.txt`
+`./program.exe 10 5 grades.txt`
 
 The program will create an output file named `output.txt` in the same directory as the input file.
 
