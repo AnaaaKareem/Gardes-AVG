@@ -1,25 +1,89 @@
-Here is a possible README.md for your project:
-
 # Student Grades Calculator
 
-This project is a C program that calculates the average grades of a number of students and writes them to an output file. The program takes three command line arguments: the number of students, the number of grades per student, and the name or path of the input file. The input file should contain one line for each student, with the student ID (between 2022000 and 2022099) followed by the grades (between 0 and 100). The program uses a dynamically allocated 2D array to store the grades and checks for the constraints on the input data. The output file will contain one line for each student, with the student ID and the average grade.
+The **Student Grades Calculator** is a C program designed to compute the average grades for a group of students and store the results in an output file. The program reads student data from an input file, validates the data against predefined constraints, calculates the average grade for each student, and writes the results in a structured format.
 
-## How to compile and run
+The program accepts three command-line arguments:
 
-To compile the program, use the gcc compiler with the following command:
+1. The number of students
+2. The number of grades per student
+3. The name or path of the input file
 
-`gcc -o student_grades student_grades.c`
+A dynamically allocated 2D array is used to store the grades, allowing the program to handle different numbers of students and grades efficiently.
 
-To run the program, use the following command:
+---
 
-`./student_grades <number_of_students> <number_of_grades> <input_file>`
+## Input Format
 
-For example, if you have an input file named `grades.txt` with 10 students and 5 grades per student, you can run the program as follows:
+The input file must contain one line per student. Each line should follow this format:
 
-`./student_grades 10 5 grades.txt`
+* **Student ID**: an integer between **2022000** and **2022099**
+* **Grades**: integers between **0** and **100**
 
-The program will create an output file named `output.txt` in the same directory as the input file.
+Example line:
 
-## Author and license
+```
+2022001 85 90 78 88 92
+```
 
-This project was made by Karim Amr Elsayed Khater. It is not licensed and is free to use and modify.
+---
+
+## Output Format
+
+The program generates an output file named **`output.txt`**, created in the same directory as the input file.
+Each line in the output file contains:
+
+* The student ID
+* The calculated average grade
+
+Example output:
+
+```
+2022001 86.6
+```
+
+---
+
+## How to Compile and Run
+
+### Compilation
+
+Use the GCC compiler to compile the program:
+
+```
+gcc -o student_grades student_grades.c
+```
+
+### Execution
+
+Run the program using the following command:
+
+```
+./student_grades <number_of_students> <number_of_grades> <input_file>
+```
+
+Example:
+
+```
+./student_grades 10 5 grades.txt
+```
+
+This command processes 10 students, each with 5 grades, from the file `grades.txt`.
+
+---
+
+## Program Features
+
+* Dynamic memory allocation for flexible data handling
+* Input validation for student IDs and grades
+* Average grade calculation for each student
+* File input and output handling
+* Clear error handling for invalid inputs or file access issues
+
+---
+
+## Author and License
+
+This project was made by **Karim Amr Elsayed Khater**.
+It is not licensed and is free to use and modify.
+
+---
