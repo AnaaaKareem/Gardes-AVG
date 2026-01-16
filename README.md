@@ -83,7 +83,6 @@ This command processes 10 students, each with 5 grades, from the file `grades.tx
 
 ## Author and License
 
-This project was made by **Karim Amr Elsayed Khater**.
 It is not licensed and is free to use and modify.
 
 ---
